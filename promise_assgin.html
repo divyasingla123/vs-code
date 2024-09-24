@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let random_no=2;
+        let promise=new Promise(function(resolve,reject){
+            if(random_no==1){
+                reject("error");
+            }
+            else{
+                resolve();
+                }
+            });
+        promise.then(function(){  
+            user=[701,702,703,704];
+                x="user";
+                for(i=0;i<user.length;i++)
+                console.log(x+user[i]);
+        });
+        
+    </script>
+</body>
+</html>

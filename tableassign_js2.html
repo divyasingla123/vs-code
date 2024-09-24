@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <table id="t1" border="1px solid black">
+        <tr id="t2">
+            <th>name
+            </th>
+            <th>email
+            </th>
+        </tr>
+        <tr>
+            <td>abc</td>
+            <td>abc@gmail.com</td>
+        </tr>
+    </table>
+    <h3>select background color for table</h3>
+    <input type="radio" name="c1" id="colr1" onclick="ch1()">yellow
+    <input type="radio" name="c1" id="colr2" onclick="ch1()">red
+    <input type="radio" name="c1" id="colr3" onclick="ch1()">green
+
+    <h3>select background color for heading row</h3>
+    <input type="radio" name="c2" id="row1" onclick="r1()">yellow
+    <input type="radio" name="c2" id="row2" onclick="r1()">red
+    <input type="radio" name="c2" id="row3" onclick="r1()">green
+
+    <h3>select background color for table text</h3>
+    <input type="radio" name="c3" id="text1" onclick="text()">yellow
+    <input type="radio" name="c3" id="text2" onclick="text()">red
+    <input type="radio" name="c3" id="text3" onclick="text()">green
+
+    <h3>apply shadow to the table</h3>
+    <input type="checkbox"  id="colr" onclick="shadow()">
+
+    <script>
+        function ch1(){
+            if(document.getElementById("colr1").checked==true)
+        document.getElementById("t1").style.backgroundColor="yellow";
+        
+        if(document.getElementById("colr2").checked==true)
+        document.getElementById("t1").style.backgroundColor="red";
+        
+        if(document.getElementById("colr3").checked==true)
+        document.getElementById("t1").style.backgroundColor="green";
+        }
+
+        function r1(){
+            if(document.getElementById("row1").checked==true)
+        document.getElementById("t2").style.backgroundColor="yellow";
+        
+        if(document.getElementById("row2").checked==true)
+        document.getElementById("t2").style.backgroundColor="red";
+        
+        if(document.getElementById("row3").checked==true)
+        document.getElementById("t2").style.backgroundColor="green";
+        }
+
+        function text(){
+            if(document.getElementById("text1").checked==true)
+        document.getElementById("t1").style.color="yellow";
+        
+        if(document.getElementById("text2").checked==true)
+        document.getElementById("t1").style.color="red";
+        
+        if(document.getElementById("text3").checked==true)
+        document.getElementById("t1").style.color="green";
+        }
+
+        function shadow(){
+            if(document.getElementById("colr").checked==true)
+        document.getElementById("t1").style.boxShadow="2px 2px 2px red";
+        }
+
+    </script>
+</body>
+</html>

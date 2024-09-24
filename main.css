@@ -1,0 +1,81 @@
+/*body{
+    background-color: aquama;
+    background-image: url("image.png"); //ya toh image chlegi ya gradient wala
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(red,yellow,green);
+    background-color: yellow;
+    background-position: left top;
+}
+    .container{
+        border: 5px solid black;
+        width: 500px;
+        background-image: url("image.png"); 
+        background-size: cover;
+        height: 300px;
+        color: aliceblue;
+
+    }
+    .top-left{
+        position: absolute;
+        top: 15px;
+        left: 16px;
+    }
+    .bottom-left{
+        position: absolute;
+        bottom: 250px;
+        left: 16px;
+    }
+    .centered{
+        position: absolute;
+        top: 28%;
+        left: 50%;
+    }
+    .top-right{
+        position: absolute;
+        top: 15px;
+        right: 60px;
+    }
+    .bottom-right{
+        position: absolute;
+        bottom: 250px;
+        right: 60px;
+    }*/
+
+    /*with relative position*/
+    .container{
+        border: 5px solid black;
+        width: 500px;
+        background-image: url("image.png"); 
+        background-size: cover;
+        height: 300px;
+        color: white;
+        margin: auto;
+
+    }
+    .top-left{
+        position: relative;
+        top: 0px;
+        left: 10px;
+    }
+    .bottom-left{
+        position: relative;
+        bottom:-260px;
+        left: 15px;
+    }
+    .centered{
+        position: relative;
+        top: 28%;
+        left: 45%;
+    }
+    .top-right{
+        position: relative;
+        top: -23px;
+        right:-430px;
+    }
+    .bottom-right{
+        position: relative;
+        bottom: -210px;
+        right: -410px;
+    }
+    

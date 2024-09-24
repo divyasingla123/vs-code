@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let data=true;
+        let promise=new Promise(function(resolve,reject){
+            if(data){
+                resolve("fulfilled");
+            }
+            else{
+                reject("error occured");
+            }
+        })
+        promise.then(function(successMessage){  //successMessage and errorMessage are keywords
+            console.log(successMessage);
+        })
+        .then(function(){
+            console.log("success2")
+        })
+        .catch(function(errorMessage){
+            console.log(errorMessage);
+        })
+        .finally(function(){
+            console.log("finally!");
+        });
+    </script>
+</body>
+</html>

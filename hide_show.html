@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myfunction(){
+            var x=document.getElementById("mydiv");
+            if(x.style.display==="none"){
+                x.style.display="block";
+                document.getElementById("btn").innerText="H I D E";
+            }
+            else{
+                x.style.display="none";
+                document.getElementById("btn").innerText="S H OW";
+            }
+        }
+    </script>
+    <button id="btn" onclick="myfunction()">H I D E</button>
+    <div id="mydiv">
+        this text is inside a div element
+    </div>
+</body>
+</html>

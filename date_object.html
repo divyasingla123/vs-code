@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- in date obj by using date obj we create object first then we use date 
+d.toLocaleString() : returns date and tym
+d.toLocaleString('default',{month: 'long'}) : returns month
+d.toLocaleString('default',{weekday: 'long'}) : returns weekday full
+d.getHours() : returns hours
+d.getDay() : returs day no of a week
+d.getDate() : returns date
+d.getMonth()  : returns month but remember it takes jan as 0 so we will alwys add 1 in it
+d.getFullYear(): returns year
+d.getMinutes() : returns month
+d.getSeconds() : returns getSeconds -->
+    <button id="date" onclick="display()">display date</button><br>
+    <script>
+       // document.write("<b>full month</b>"+d.toLocaleString('default', {month: 'long'})+"<br>");
+       function display(){
+        var d=new Date();
+       document.write(d.toLocaleString('default', {month: 'long'})+"<br>")+
+       document.write(d.getFullYear('default', {year: 'long'})+"<br>")+
+       document.write(d.getDate('default', {date: 'long'})+"<br>")+
+       document.write(d.toLocaleString('default', {weekday: 'long'})+"<br>");}
+
+    </script>
+</body>
+</html>

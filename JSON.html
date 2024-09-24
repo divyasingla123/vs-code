@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="jsondata"></h3>
+    <script>
+        //JSON ARRAY
+    //     let person = [
+    //         {"name": "ram","age": 27},
+    //         {"name": "amit","age": 25},
+    //         {"name": "kavita","age": 22}
+    // ]
+    //JSON OBJECTS
+    // let person1 = {
+    //         "name": "ram",
+    //         "age": 25,
+    //         "gender" : "male"
+    // }
+
+    //accessing JSON objects
+    // marks={
+    //     "maths":97,
+    //     "science":86,
+    //     "language":92
+    // }
+    // for(item in marks){
+    //     console.log(item,marks[item]);
+    // }
+
+    //accessing nested values
+    // const data={
+    //     "name":"ram",
+    //     "age":27,
+    //     "hobby":{
+    //         "reading":true,
+    //         "music":false,
+    //         "sport":"cricket"
+    //     },
+    //     "subjects":["javascript","html","css"]
+    // }
+    // console.log(data.name);
+    // console.log(data.hobby);
+    // console.log(data.hobby.sport);
+    // console.log(data.subjects[1]);
+
+    //sending JSON data to client browser
+        marks={
+            "maths":97,
+            "chemistry":78,
+            "language":92
+        }
+        document.getElementById("jsondata").innerHTML=JSON.stringify(marks);
+        </script>
+        
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=[13,58,23,45,26,48,100,66];
+        console.log(arr.sort());
+        var newarr=[];
+        for(i=0,ni=0;i<arr.length;i++){
+            if(arr[i]%2==0){
+                newarr[ni]=arr[i];
+                ni++;
+            }
+            console.log(newarr.sort());
+            //ascending order
+            console.log(newarr.sort(function(a,b){return a-b}));
+            //descendong order
+            console.log(newarr.sort(function(a,b){return b-a}));
+        }
+    </script>
+</body>
+</html>

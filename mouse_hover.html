@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html>
+        <head>
+            <title> CSS Transition</title>
+        <style>
+            h1{
+                color:green;
+                text-align: center;
+                text-decoration: underline;
+            }
+            div.square{
+                height: 150px;
+                width:150px;
+                border: 1px dashed black;
+                margin: auto;
+                background: pink;
+                transition: height 2s, width 2s, background 2s;/*ye tino properties yahan pe define bhi honi chahiye jisme transition lgayenge*/
+            }
+            div.square:hover{
+                height: 300px;
+                width:300px;
+                background: cyan;
+            }
+        </style>
+    </head>
+        <body>
+            <h1>Mouse Hover</h1>
+            <div class="square"></div>
+        </body>
+    </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //for descending b-a and for ascending a-b
+        // let num=[4,2,6,12,3];
+        // num.sort((a,b)=>b-a);
+        // console.log(num);
+
+
+        //to check length
+        // let names=['krishna','ram','maruti'];
+        // lengths=names.map(name=>name.length);
+        // console.log(lengths);
+
+        //to calculate average
+        // const arrayavg=(arr)=>{
+        //     let total=0;
+        //     for(let number of arr){
+        //         total+=number;
+        //     }
+        //     return total/arr.length;
+        // }
+        // let numbers=[1,2,3,4,5,6,7];
+        // console.log(`average is:${arrayavg(numbers)}`);
+
+        //display table
+    let table = (n) => {
+    let result = ""; 
+    for (let i = 1; i <= 10; i++) {   
+        result += `${n} * ${i} = ${i * n}\n`;  
+    }
+    return result;  
+}
+
+let value = 10;
+console.log(table(value));  
+
+    </script>
+</body>
+</html>

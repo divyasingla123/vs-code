@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript" language="javascript">
+        function zoomIn(){
+            var imgw= document.getElementById("img1").style.width = '400px';
+            var imgh= document.getElementById("img1").style.height='400px';
+            
+            
+            if(imgw <='500px' && imgh<='500px'){
+                imgw= imgw+50;
+                imgh = imgh+50;
+                
+            }
+            else
+            {
+                alert("maximum reached");
+            }
+            
+        }
+        function zoomOut(){
+            var imgw= document.getElementById("img1").style.width='250px';
+            var imgw= document.getElementById("img1").style.width='250px';
+            if(imgw >='200px' && imgh>='200px'){
+                imgw=imgw-50;
+                imgh = imgh-50;
+                
+            }
+            else
+            {
+                alert("minimum reached");
+            }
+        }
+    </script>
+</head>
+<body>
+    <img id="img1" src="image.png" height="200" width="200">
+    <br>
+    <button onclick="zoomIn()">zoom in image</button>
+    <button onclick="zoomOut()">zoom out image</button>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    div{
+        display: inline-flex;
+        overflow: hidden;
+        border: 4px solid navy;
+    }
+   </style>
+   <script>
+    let curscale=0.5;
+    function zoomIn(){
+        if(curscale>=3){
+            alert("you are fully zoomed");
+        }
+        else{
+            document.getElementById("img1").style.scale=curscale+1;
+            document.getElementById("img1").style.transition="0.5s";
+            curscale++;
+
+        }
+    }
+    function zoomout(){
+        if(curscale>=1){
+            alert("limit reached");
+        }
+        else{
+            document.getElementById("img1").style.scale=curscale-0.5;
+            document.getElementById("img1").style.transition="0.5s";
+            curscale--;
+
+        }
+    }
+   </script>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <img id="img1" src="image.png" height="200" width="200"><br>
+    </div>
+    <br><br>
+    <button onClick="zoomIn()">zoom in</button>
+    <button onClick="zoomout()">zoom out</button>
+</body>
+</html>

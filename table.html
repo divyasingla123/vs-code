@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table bordercolor="blue" border="2" width="50%" cellspacing="5px" cellpadding="10px">
+            <tr>
+                <th>student_id</th>
+                <th>student_name</th>
+                <th>student_age</th>
+            </tr>
+            <tr>
+                <td rowspan="2">001</td>
+                <td>xyx</td>
+                <td>18</td>
+            </tr>
+            <tr>
+               <!-- <td>002</td>-->    <!--to merge two rows ,comment out cell of 2nd row-->
+                <td align="center" colspan="2">abc</td>
+                <!--<td>19</td>-->      <!--to merge two columns, comment out cell of 2nd column-->
+            </tr>
+    </table>
+    <br><br><br>
+
+    <table border="4" cellspacing="0" height="50px" width="50%">
+        <tr>
+            <th>student id</th>
+            <th>name</th>
+            <th>gender</th>
+            <th>age</th>
+        </tr>
+        <tr>
+            <td>1234</td>
+            <td>bill</td>
+            <td>male</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>1235</td>
+            <td>john</td>
+            <td>male</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>1236</td>
+            <td>olivia</td>
+            <td>female</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>1237</td>
+            <td>mia</td>
+            <td>female</td>
+            <td>18</td>
+        </tr>
+    </table>
+    <br><br><br>
+
+    <table border="4" width="70%">
+        <caption><b>sales report</b></caption>   <!--to write caption above the table-->
+        <tr bgcolor="green">
+            <th colspan="2">octor</th>
+            <th colspan="2">november</th>
+        </tr>
+        <tr align="center">
+            <td>sales</td>
+            <td>profit</td>
+            <td>sales</td>
+            <td>profit</td>
+        </tr>
+        <tr>
+            <td>rs. 200,00</td>
+            <td>rs. 50,00</td>
+            <td>rs. 300,00</td>
+            <td>rs. 70,000</td>
+        </tr>
+        <tr bgcolor="grey">
+            <td align="center" colspan="4">november was more productive</td>
+        </tr>
+
+    </table>
+    <br><br><br>
+    
+    <table border="4" width="50%">
+        <caption><b>student marks</b></caption>
+        <tr align="center">
+            <th>name</th>
+            <th>subject</th>
+            <th>marks</th>
+        </tr>
+        <tr>
+            <td rowspan="2">alok kumar</td>
+            <td>front-end</td>
+            <td>75</td>
+        </tr>
+        <tr>
+           <!-- <td>alok</td>-->
+            <td>operating system</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td rowspan="2">deepak gupta</td>
+            <td>front-end</td>
+            <td><mark>80</mark></td>      <!--to highlight any value use mark tag-->
+        </tr>
+        <tr>
+           <!--<td>deepak</td>--->
+           <td>operating system</td>
+           <td>75</td>
+        </tr>
+    </table>
+    <br><br><br>
+
+
+    <table border="2">
+        <caption><b>Time Table</b></caption>
+        <tr>
+            <th>Day/period</th>
+            <th>I<br>9:30-10:20</th>
+            <th>II<br>10:20-11:10</th>
+            <th>III<br>11:10-12:00</th>
+            <th>12:00-12:40</th>
+            <th>IV<br>12:40-1:30</th>
+            <th>V<br>1:30-2:20</th>
+            <th>VI<br>2:20-3:10</th>
+            <th>VII<br>3:10-4:00</th>
+        </tr>
+        <tr>
+            <th>Monday</th>
+            <td>eng</td>
+            <td>math</td>
+            <td>che</td>
+            <td rowspan="6" align="center"><b>lunch</b></td>
+            <td colspan="3" align="center" bgcolor="grey">lab</td>
+            <!--<td></td>-->
+           <!-- <td></td>-->
+            <td>phy</td>
+        </tr>
+        <tr>
+            <th>tuesday</th>
+            <td colspan="3" align="center" bgcolor="grey">lab</td>
+            <!--<td></td>-->
+            <td>eng</td>
+            <td>chem</td>
+           <td>maths</td>
+            <td>sports</td>
+        </tr>
+        <tr>
+            <th>wednesday</th>
+            <td>maths</td>
+            <td>phy</td>
+            <td>eng</td>
+            <!--<td></td>-->
+            <td>chem</td>
+            <td colspan="3" align="center">library</td>
+        </tr>
+        <tr>
+            <th>thursday</th>
+            <td>phy</td>
+            <td>eng</td>
+            <td>chem</td>
+            <!--<td></td>-->
+            <td colspan="3" align="center" bgcolor="grey">lab</td>
+            <td>maths</td>
+        </tr>
+        <tr>
+            <th>friday</th>
+            <td colspan="3" align="center" bgcolor="grey">lab</td>
+            <td>math</td>
+            <td>chem</td>
+           <td>eng</td>
+            <td>phy</td>
+        </tr>
+        <tr>
+            <th>saturday</th>
+            <td>eng</td>
+            <td>chem</td>
+            <td>math</td>
+            <!--<td></td>-->
+            <td colspan="3" align="center" bgcolor="grey">seminar</td>
+            <td>sports</td>
+        </tr>
+    </table>
+    <br><br><br>
+
+
+    <!--nested table-->
+    <table border="2" cellspacing="0" cellpadding="5">
+        <tr align="center" bgcolor="yellow">
+            <th>name</th>
+            <th>job title</th>
+            <th>email address</th>
+            <th>nested table</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Anna Fitzgerald</td>
+            <td>Staff writer</td>
+            <td>example@company.com</td>
+            <td>
+                <table border="1"cellspacing="0" cellpadding="5">
+                    <tr >
+                        <th>homephone</th>
+                        <th>cell phone</th>
+                    </tr>
+                    <tr>
+                        <td>888-888-880</td>
+                        <td>888-888-881</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+     <br><br><br>
+
+
+    <table border="1" cellpadding="5"width="65%">
+        <tr bgcolor="darkcyan">
+            <th>device</th>
+            <th>brand</th>
+            <th>specifications</th>
+        </tr>
+        <tr>
+            <td>smartphone</td>
+            <td>apple</td>
+            <td>
+                <table border="1" >
+                    <tr bgcolor="yellow">
+                        <td>model</td>
+                        <td>storage</td>
+                    </tr>
+                    <tr>
+                        <td>iphone12 pro</td>
+                        <td>256gb</td>
+                    </tr>
+                    <tr>
+                        <td>iphone se</td>
+                        <td>128gb</td>
+                    </tr>
+                </table>
+        </td>
+    </tr>
+        <tr>
+            <td>laptop</td>
+            <td>hp</td>
+            <td>15.6" display</td>
+        </tr>
+        <tr>
+            <td>tablet</td>
+            <td>samsung</td>
+            <td>10.5" display</td>
+        </tr>
+    </table>
+</body>
+</html>

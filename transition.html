@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <title>Transition Property</title>
+    </head>
+    <style>
+        input{
+            transition: width 1s ease-in-out;
+            width:10%;
+            margin:8px;
+            border:2px solid blue;
+            background-color: cyan;
+            color:blue;
+        }
+        input[type=text]:focus{
+            transition: width 1 ease-in-out;
+            width:30%;
+            background-color: yellow;
+        }
+    </style>
+    <body>
+        <form>
+            FirstName<input type="text" name="fn">
+            <br>
+            LastName<input type="text" name="vn">
+        </form>
+    </body>
+</html>

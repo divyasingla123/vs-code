@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1"></h1><br>
+    <button id="btn" onclick="countdownTimer(5);">S T A R T</button>
+    <script>
+        function countdownTimer(seconds){
+            const countdown=setInterval(function(){
+                seconds--;
+                if(seconds<0)
+                clearInterval(countdown);
+            else
+            document.getElementById('h1').innerText=seconds;
+            },1000);
+        }
+    </script>
+</body>
+</html>

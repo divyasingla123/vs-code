@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!--wap to concatenate 1 after each letter of a string and creates a new array use map,name="chirkara" output: c1,h1,i1,t1,k1,a1,r1,a1-->
+   <script>
+    var myarray = "chitkara".split('');
+    var dbarray = myarray.map(concat);
+    document.write(`${dbarray}`);
+
+    function concat(n){
+        var str= n + '1';
+        return str;
+    }
+</script>
+</body>
+</html>

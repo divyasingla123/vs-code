@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .container{
+            width: 1140px;
+            height: 485px;
+            text-align: center;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 140px 500px 500px;
+            grid-template-rows: 85px 400px;
+        }
+        .header{
+            grid-column-start: 1 ;
+            grid-column-end: 3;
+        }
+        .menu{
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .content{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            /* overflow: scroll;  scroll bar ayega hi ayega */
+            /* overflow: auto;  agr content jada ayega to hi scroll bar ayega */
+        } 
+    </style>
+</head>
+<body bgcolor="black">
+    <div class="container">
+        <div class="header" style="background-color: grey;">header</div>
+        <div class="menu" style="background-color: yellow;">menu</div>
+        <div class="content" style="background-color: green;">main</div>
+    </div>
+    
+</body>
+</html>

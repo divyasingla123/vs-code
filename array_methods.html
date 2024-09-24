@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //include method
+        const name=['abc','pqr','xyz'];
+        console.log(name.includes('abc'));
+        //reverse method
+        name.reverse();
+        console.log(name);
+
+
+        //spread operator 
+        const names=['abc','pqr','xyz'];
+        let newarr=[...names,'rahul'];
+        console.log(newarr);
+
+
+        //converting string to array
+        let word="java";
+        let warr=[...word];
+        console.log(warr);
+
+        //merging via spread operator
+        const n=['abc','pqr','xyz'];
+        const n1=['abc','pqr','xyz'];
+        var all=[...n,...n1];
+        console.log(all);
+
+        //max no
+        let arr1=[1,2,3,4];
+        let arr2=[4,5,6,7];
+        let arr3=[2,4,6,7];
+        console.log(Math.max(...arr1,...arr2,...arr3));
+
+        //rest operator-allow to collect multiple elements into a singlr array
+        function sum(...args){
+            var result=args.reduce(function(a,b){
+                return a+b;
+            },0);
+            return result;
+        }
+        console.log(sum(1,2,3,4,5));
+        console.log(sum(1,2,3));
+
+        //convert all array values in uppercase
+        let arr = ["node.js", "web", "react", "python"];
+        let narr = [];
+        for (let i = 0; i < arr.length; i++) {
+        narr[i] = arr[i].toUpperCase();
+        }
+        console.log(narr);
+
+        //to delete all occrrences of a given element
+        let num = [23, 23, 45, 67, 89];
+        for (let j = 0; j < num.length; j++){
+            if (num[j] == 23){
+            num.splice(j, 1);
+            j--;
+        }
+    }
+    console.log(num); 
+
+    //display randon name from array
+    const name1 = ["alok", "ram", "maruti", "siya", "deepak", "krish"];
+        function display() {
+            let randomIndex = Math.floor(Math.random() * name1.length);
+            document.write(name1[randomIndex]); 
+        }
+
+    //swap the case of each character of a string
+    var str='!JavaScript!';
+    const upper='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const lower='abcdefghijklmnopqrstuvwxyz';
+    var result=[];
+    for(var x=0;x<str.length;x++){
+        if(upper.indexOf(str[x])!==-1){
+            result.push(str[x].toLowerCase());
+        }
+        else if(lower.indexOf(str[x])!==-1){
+            result.push(str[x].toUpperCase());
+        }
+        else{
+            result.push(str[x]);
+        }
+    }
+    console.log(result.join(' '));
+    </script>
+    <button id="name" onclick="display()">show randomly</button>
+</body>
+</html>

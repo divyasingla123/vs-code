@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- to acsess the index of the array elements inside the loop,we can use the for..of statement with the entries() method of an array
+the entries method return a pair of [index,element] in each iteration entries 2 value return krta h index and its value -->
+    <script>
+        let colors=['red','blue','yellow','green'];
+        for(const[index,color] of colors.entries()){
+            console.log(`$color is at index &{index}`);
+        }
+    </script>
+</body>
+</html>

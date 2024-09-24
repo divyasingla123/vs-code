@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--to display current date when user clicks on button in format march 2,2024-->
+    <!-- <button id="btn1">click here</button>
+    <script>
+        function mydate(){
+        var d=new Date();
+        document.write(d.toLocaleString('default', {month: 'long'}))+
+        document.write(d.getDate()+",")+
+        document.write(d.getFullYear())
+    }
+        document.getElementById("btn1").addEventListener("click",mydate); -->
+
+
+<input type="number" id="num" placeholder="enter any number..">
+<button id="btn1">display table</button><br>
+<div id="tabledata"></div>
+<script>
+    document.getElementById("tabledata").style.display='none';
+    function showtable(){
+        var str=' ';
+        n=document.getElementById('num').value;
+        document.getElementById('tabledata').style.display='block';
+        for(i=1;i<=10;i++){
+            prod=n*i;
+            str+= `${n}*${i}=${prod}<br>`;
+        }
+        document.getElementById('tabledata').innerHTML=str;
+    }
+    document.getElementById("btn1").addEventListener("click",showtable);
+</script>
+</body>
+</html>

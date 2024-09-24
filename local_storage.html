@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="logininfo" action="calculator.html" onsubmit="return validate()">
+        username:<input type="text" name="uname"><br>
+        password:<input type="password" name="pwd"><br>
+        <input type="submit" value="SUBMIT">
+    </form>
+    <script>
+        localStorage.user=JSON.stringify({name:"ram",password:12345});
+        let user=JSON.parse(localStorage.user);
+        function validate(){
+            let u=document.logininfo.uname.value;
+            let p=document.logininfo.pwd.value;
+            if(u==user.name && p==user.password){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

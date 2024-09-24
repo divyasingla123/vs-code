@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="t1" border="1px solid black">
+        <th>
+            <tr>
+                <td>name</td>
+                <td>email</td>
+            </tr>
+        </th>
+        <tr>
+            <td>abc</td>
+            <td>abc@gmail.com</td>
+        </tr>
+    </table>
+    <input type="radio" name="c1" id="colr1" onclick="ch1()">yellow
+    <input type="radio" name="c1" id="colr2" onclick="ch1()">red
+    <input type="radio" name="c1" id="colr3" onclick="ch1()">green
+
+    <script>
+        function ch1(){
+            if(document.getElementById("colr1").checked==true)
+        document.getElementById("t1").style.backgroundColor="yellow";
+        
+        if(document.getElementById("colr2").checked==true)
+        document.getElementById("t1").style.backgroundColor="red";
+        
+        if(document.getElementById("colr3").checked==true)
+        document.getElementById("t1").style.backgroundColor="green";
+        }
+
+    </script>
+</body>
+</html>

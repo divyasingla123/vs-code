@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        /* jo jo odd pe h unka color change hoje */
+        /* li:nth-child(odd){
+            color: red;
+        } */
+        /* li:nth-child(n+3){
+            color: red;
+        } */
+        /* li:nth-child(3n+3){
+            color: red;
+        } */
+         p{
+            text-shadow: 5px 3px 7px green;
+            font-size: 50px;
+         }
+         h1:hover{
+            background-color: yellow;
+         }
+         /* a:visited {                   link visit krne ke baad ye green hojega
+            color: green;
+         } */
+          a:link{
+            color: black;
+          }
+          a:hover{
+            color: blue;
+            /* background-color: yellow; */
+          }
+          input[type=text]:focus{
+            border: 2px solid red;
+            background-color: lightblue;
+          }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>banana</li>
+        <li>orange</li>
+        <li>mango</li>
+        <li>pear</li>
+        <li>lichi</li>
+        <li>grapes</li>
+        <li>apple</li>
+        <li>papaya</li>
+        <li>kiwi</li>
+        <li>watermelon</li>
+    </ol>
+    <!--pseudo selectors = nth child -->
+    <br><br>
+    <p><B>This is text shadow !</B></p>
+    <h1><B>This is pseudo selector !</B></h1>
+    <a href="https://www.mcafee.com/">visited</a>
+    <br><br>
+    Name : <input type="text" name="uname">
+</body>
+</html>
