@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   // generate random names
+   <script>
+    var names = ['geeta','ram','atul','deepak'];
+    document.write(names);
+    function random(){
+        var nameslen = names.length-1;
+        var i= Math.floor(Math.random()*(nameslen-0+1)+0);
+        document.getElementById("name").innerText = names[i];
+    }
+    </script>
+    <br><br>
+    <p id="name">Random name will appear here</p>
+    <button  onclick="random()">Show random</button>
+</body>
+</html>
