@@ -22,12 +22,12 @@
         }
     }
     function zoomout(){
-        if(curscale>=1){
+        if(curscale<=1){
             alert("limit reached");
         }
         else{
             document.getElementById("img1").style.scale=curscale-0.5;
-            document.getElementById("img1").style.transition="0.5s";
+            document.getElementById("img1").style.transition="0.2s";
             curscale--;
 
         }
