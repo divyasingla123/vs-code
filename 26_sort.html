@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [13,58,23,45,26,48,100,60];
+        console.log(arr.sort());
+        var newarr=[];
+        for(var index=0 ,ni=0;index<arr.length;index++){
+            if (arr[index] % 2==0){
+               newarr[ni] = arr[index];
+               ni++;
+            }
+            //console.log(newarr.sort());      //it is sorting by only seeing first digit
+            console.log(newarr.sort(function(a,b){return a-b}));     //sort in asceneding
+            console.log(newarr.sort(function(a,b){return b-a}));    //sort in descending
+         }
+    </script>
+</body>
+</html>

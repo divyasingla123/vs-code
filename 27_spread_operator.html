@@ -1,3 +1,13 @@
+
+
+
+<!-- spread operator / rest operator (symbol -> ...) : but spread operator allows us to expand an array or object into its individual elements 
+rest operator works opp of spread operator
+to concatenate arrays we can use concat but it is applicable with  two arrays only
+so we can use spread operator it concate more than 1 array
+to find max between three array use: console.log(Math.max(...arr1,...arr2,...arr3)); 
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,18 +16,75 @@
     <title>Document</title>
 </head>
 <body>
-   // generate random names
-   <script>
-    var names = ['geeta','ram','atul','deepak'];
-    document.write(names);
-    function random(){
-        var nameslen = names.length-1;
-        var i= Math.floor(Math.random()*(nameslen-0+1)+0);
-        document.getElementById("name").innerText = names[i];
-    }
+    
+    <script>
+        // const names = ['geeta','ram','atul','deepak'];
+        // let newarray = [...names,'rahul'];
+        // console.log(newarray);
+        
+        // let word = "javascript";
+        // let wordarray = [...word];
+        // console.log(wordarray);
+
+        // var allnames = [...names ,...word];
+        // console.log(allnames);
+
+        // let arr1 =[1,-2,3,4];
+        // let arr2 =[8,3,-8,1];
+        // let arr3 =[15,-7,3,6,-2];
+        // console.log(Math.max(...arr1, ...arr2, ...arr3)); 
+
+        
+    //     function sum(... args){
+    //         var result =args.reduce(function(a,b){
+    //             return a+b;
+    //         },0);
+    //         //here 0 is accumalitive increase means increase after total sum
+    //         return result;
+            
+    //     }
+    //     console.log("sum of no is : "+ sum(1,2,3,4,5));
+    //     console.log("sum of no is : "+ sum(1,2,3));
+        
+        
+    //     //uppercase everything
+    //     var arr1=["Node.js","webtechnologies","react.js","Phython"];
+    //     var newarray=[];
+    //     for(var index=0;index< arr1.length;index++){
+    //         newarray[index]=arr1[index].toUpperCase();
+    //     }
+    //     console.log(newarray);
+        
+        
+    //     //delete all occurences of a given element
+    //     var arr = [21,32,12,21];
+    //     var element = 21;
+    //     for (var i=0; i<= arr.length; i++) {
+    //         if (arr[i]==element) {
+    //         arr.splice(i, 1);  
+    //         i--;
+    //     }
+    // }
+    // console.log(arr);
+    
+    // //generate random names
+    // var names = ['geeta','ram','atul','deepak'];
+    // document.write(names);
+    // function random(){
+    //     var nameslen = names.length-1;
+    //     var i= Math.floor(Math.random()*(nameslen-0+1)+0);
+    //     document.getElementById("name").innerText = names[i];
+
+        
+        
+
+
+
+   // }
     </script>
-    <br><br>
+    <!-- <br><br>
     <p id="name">Random name will appear here</p>
-    <button  onclick="random()">Show random</button>
+    <button  onclick="random()">Show random</button> -->
+
 </body>
 </html>
