@@ -63,7 +63,7 @@
 //  function readData(arr,data){
 //     console.log(data);
 //  }
-//  fs.readFile('31_node_js.js','utf8',readData);          //readfile is the function to read a file
+//  fs.readFile('31_node.js','utf8',readData);          //readfile is the function to read a file
 
 
 
